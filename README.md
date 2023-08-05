@@ -3,13 +3,22 @@
 The Project consists of two programs, `psclient` and `psserver`, that communicate using the publish/subscribe messaging pattern over a TCP network connection.
 
 **psclient:**
+
 ![image](https://github.com/Mohamad11Dab/The-Publish-Subscribe-Communication-Model-/assets/114811082/3a29de0c-1527-4bbf-8c8d-5fd43d9ebda3)
 
 - The `psclient` program is a command-line interface that allows clients to connect to the `psserver`, name themselves, subscribe to and publish topics.
 - It accepts command-line arguments for the server's port number, client's name, and optional topics to subscribe to.
 - After connecting to the server, it provides the client's name and sends subscription requests for the specified topics.
+
+  ![image](https://github.com/Mohamad11Dab/The-Publish-Subscribe-Communication-Model-/assets/114811082/6b4d85b9-8ab0-4b4b-8e0f-f3a09efeda88)
+
 - It receives messages from the server and outputs them to stdout.
 - It asynchronously reads lines from stdin and sends them unmodified to the server, allowing clients to publish and subscribe interactively.
+
+  Example:
+
+  ![image](https://github.com/Mohamad11Dab/The-Publish-Subscribe-Communication-Model-/assets/114811082/8610bf2d-a0df-409f-b79e-a01124fecd39)
+
 
 **psserver:**
 - The `psserver` program is the publish/subscribe server that handles multiple client connections.
