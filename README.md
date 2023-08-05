@@ -17,10 +17,14 @@ The Project consists of two programs, `psclient` and `psserver`, that communicat
 
   Example:
 
-  ![image](https://github.com/Mohamad11Dab/The-Publish-Subscribe-Communication-Model-/assets/114811082/8610bf2d-a0df-409f-b79e-a01124fecd39)
+ ![image](https://github.com/Mohamad11Dab/The-Publish-Subscribe-Communication-Model-/assets/114811082/3b93ba0e-c5c6-4cc5-bc7e-9cfdbbb38046)
+
 
 
 **psserver:**
+
+![image](https://github.com/Mohamad11Dab/The-Publish-Subscribe-Communication-Model-/assets/114811082/d24ad6aa-53fa-4750-bb2a-f3ca616b15e3)
+
 - The `psserver` program is the publish/subscribe server that handles multiple client connections.
 - It accepts command-line arguments for the maximum number of simultaneous client connections and the port number to listen on.
 - It creates a listening socket and waits for incoming connections from clients.
@@ -41,6 +45,9 @@ The Project consists of two programs, `psclient` and `psserver`, that communicat
 - The programs should not use signal handlers or attempt to mask or block signals.
 
 **Example Usage:**
+
+![image](https://github.com/Mohamad11Dab/The-Publish-Subscribe-Communication-Model-/assets/114811082/80c62d10-7115-485e-b3fb-73d98e4d3988)
+
 - Clients can subscribe to topics and receive publication notices from the server.
 - They can publish messages with values for topics.
 - Clients can unsubscribe from topics to stop receiving publication notices for those topics.
